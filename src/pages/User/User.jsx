@@ -12,6 +12,7 @@ export default function User() {
   const [choice, setChoice] = useState("daily");
   console.log(choice);
   let activities = [...data[0].activities];
+
   return (
     <div className="container">
       <div className="card">

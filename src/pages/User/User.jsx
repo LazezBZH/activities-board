@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { users } from "../../../data.json";
 import Activity from "../../components/Activity/Activity";
 import "./User.css";
@@ -12,6 +12,12 @@ export default function User() {
   const [choice, setChoice] = useState("daily");
   console.log(choice);
   let activities = [...data[0].activities];
+
+  let navigate = useNavigate();
+
+  function back() {
+    navigate(-1);
+  }
 
   return (
     <div className="container">
@@ -40,7 +46,8 @@ export default function User() {
         ))}
       </div>
 
-      <Link to={"/"}>Back</Link>
+      {/* <Link to={"/"}>Back</Link> */}
+      <button onClick={back}>retour</button>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Admin() {
   let navigate = useNavigate();
@@ -8,6 +8,9 @@ export default function Admin() {
     value = "";
   }
 
+  function back() {
+    navigate(-1);
+  }
   return (
     <div className="home">
       <select
@@ -23,6 +26,8 @@ export default function Admin() {
         <option value="Olivia_Carte">Olivia Carte</option>
         <option value="Marie_Doe">Marie Doe</option>
       </select>
+      {/* <Link to={"/"}>Back</Link> */}
+      <button onClick={back}>retour</button>
     </div>
   );
 }

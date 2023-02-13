@@ -5,48 +5,65 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
 
 export default function Home() {
-  // const [name, setName] = useState("");
-  // const [password, setPassword] = useState("");
-  // let navigate = useNavigate();
-  // const eyeOpen = document.getElementsByClassName("password-icon_open")[0];
-  // const eyeClosed = document.getElementsByClassName("password-icon_closed")[0];
-  // const passwordInput = document.getElementsByClassName("passwordInput")[0];
+  const [mail, setMail] = useState("");
+  const [password, setPassword] = useState("");
+  let navigate = useNavigate();
+  const eyeOpen = document.getElementsByClassName("password-icon_open")[0];
+  const eyeClosed = document.getElementsByClassName("password-icon_closed")[0];
+  const passwordInput = document.getElementsByClassName("passwordInput")[0];
 
-  // function closeOpen() {
-  //   eyeOpen.style.display = "none";
-  //   eyeClosed.style.display = "block";
-  //   passwordInput.type = "text";
-  // }
-  // function closeClosed() {
-  //   eyeOpen.style.display = "block";
-  //   eyeClosed.style.display = "none";
-  //   passwordInput.type = "password";
-  // }
-  // function onChangeName(e) {
-  //   setName(e.target.value);
-  // }
-  // function onChangePassword(e) {
-  //   setPassword(e.target.value);
-  // }
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-  //   console.log(name, password);
-  //   if (name == "admin" && password == "Admin@123") {
-  //     navigate(`/admin`);
-  //   } else navigate(`/error`);
-  // }
+  function closeOpen() {
+    eyeOpen.style.display = "none";
+    eyeClosed.style.display = "block";
+    passwordInput.type = "text";
+  }
+  function closeClosed() {
+    eyeOpen.style.display = "block";
+    eyeClosed.style.display = "none";
+    passwordInput.type = "password";
+  }
+
+  function onChangeMail(e) {
+    setMail(e.target.value);
+  }
+  function onChangePassword(e) {
+    setPassword(e.target.value);
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(mail, password);
+    if (mail == "jeremy.robson@monmail.com" && password == "Robson@123") {
+      navigate(`../Jérémy_Robson`);
+    } else if (
+      mail == "caroline.buipe@monmail.com" &&
+      password == "Buipe@123"
+    ) {
+      navigate(`../Caroline_Buipe`);
+    } else if (mail == "jean.bon@monmail.com" && password == "Bon@123") {
+      navigate(`../Jean_Bon`);
+    } else if (
+      mail == "arthur.dannes@monmail.com" &&
+      password == "Dannes@123"
+    ) {
+      navigate(`../Arthur_Dannes`);
+    } else if (mail == "olivia.carte@monmail.com" && password == "Carte@123") {
+      navigate(`../Olivia_Carte`);
+    } else if (mail == "marie.doe@monmail.com" && password == "Doe@123") {
+      navigate(`../Marie_Doe`);
+    } else navigate(`/error`);
+  }
   return (
     <div className="home">
-      {/* <form className="form" id="form" onSubmit={handleSubmit}>
+      <form className="form" id="form" onSubmit={handleSubmit}>
         <div className="entries">
+          {" "}
           <input
             type="text"
-            id="name"
-            value={name}
-            onChange={onChangeName}
-            placeholder="Name"
+            id="mail"
+            value={mail}
+            onChange={onChangeMail}
+            placeholder="e-mail"
           />
-
           <div className="password">
             <input
               type="password"
@@ -72,11 +89,14 @@ export default function Home() {
           className="submit"
           id="submit"
           type="submit"
-          value="Me connecter en tant qu'admin"
+          value="Me connecter"
         />
-      </form> */}
+      </form>
 
-      <Link to={"/adminLog"}>Admin</Link>
+      <div className="link">
+        <Link to={"/adminLog"}>Admin</Link>
+        <p className="allert">Log as an admin in order to see every member</p>
+      </div>
     </div>
   );
 }

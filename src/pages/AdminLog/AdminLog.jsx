@@ -33,7 +33,9 @@ export default function AdminConnected() {
     console.log(name, password);
     if (name == "admin" && password == "Admin@123") {
       navigate(`/admin`);
-    } else navigate(`/error`);
+    } else {
+      alert("name or password are false");
+    }
   }
   return (
     <div className="adminConnected">
@@ -76,7 +78,8 @@ export default function AdminConnected() {
         />
       </form>
 
-      <Link to={"/admin"}>Admin</Link>
+      {/* <Link to={"/admin"}>Admin</Link> */}
+      <Link to={"/"}>Back</Link>
     </div>
   );
 }

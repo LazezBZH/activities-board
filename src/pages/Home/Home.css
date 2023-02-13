@@ -3,6 +3,7 @@
 }
 .form {
   width: 40%;
+  margin: auto;
 }
 .entries {
   width: auto;
@@ -15,7 +16,7 @@
 }
 .passwordInput,
 .password,
-#name {
+#mail {
   height: 22px;
 }
 
@@ -31,4 +32,27 @@
   bottom: 0%;
   display: none;
   cursor: pointer;
+}
+.link {
+  width: 5rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a:hover + .allert {
+  display: block;
+}
+.allert {
+  width: 12rem;
+  color: green;
+  font-size: 0.8rem;
+  display: none;
+  position: absolute;
+  right: 0;
 }

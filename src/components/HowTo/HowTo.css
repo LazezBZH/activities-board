@@ -47,3 +47,7 @@ table input {
   border: none;
   text-align: left;
 }
+.advert-copy {
+  font-size: 0.7rem;
+  text-align: right;
+}

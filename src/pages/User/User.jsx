@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { users } from "../../../data.json";
 import Activity from "../../components/Activity/Activity";
 import "./User.css";
@@ -48,6 +48,9 @@ export default function User() {
 
       {/* <Link to={"/"}>Back</Link> */}
       <button onClick={back}>retour</button>
+      <Link className="link" to={"/"}>
+        Home
+      </Link>
     </div>
   );
 }

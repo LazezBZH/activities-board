@@ -1,8 +1,15 @@
 .adminConnected {
   width: 100vw;
 }
-.form {
-  width: 40%;
+.adminConnected form {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30%;
+  height: 10vh;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
 }
 .entries {
   width: auto;
@@ -24,6 +31,7 @@
   right: 2%;
   bottom: 0%;
   cursor: pointer;
+  color: var(--darkBlue);
 }
 .password-icon_closed {
   position: absolute;
@@ -31,4 +39,25 @@
   bottom: 0%;
   display: none;
   cursor: pointer;
+  color: var(--darkBlue);
+}
+.submit {
+  margin: 1rem auto;
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.link {
+  width: 5rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
 }

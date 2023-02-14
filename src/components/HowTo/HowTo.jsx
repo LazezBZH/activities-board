@@ -280,6 +280,9 @@ export default function HowTo() {
           </tr>
         </tbody>
       </table>
+      <div className="advert-copy">
+        * just clic on an identifiant or password to copy in clipboard
+      </div>
     </div>
   );
 }

@@ -78,8 +78,9 @@ export default function AdminConnected() {
         />
       </form>
 
-      {/* <Link to={"/admin"}>Admin</Link> */}
-      <Link to={"/"}>Back</Link>
+      <Link className="link" to={"/"}>
+        Home
+      </Link>
     </div>
   );
 }

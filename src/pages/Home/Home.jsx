@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
+import HowTo from "../../components/HowTo/HowTo";
+// import home from "../../../public/images/home.png";
 
 export default function Home() {
   const [mail, setMail] = useState("");
@@ -54,48 +56,66 @@ export default function Home() {
   }
   return (
     <div className="home">
-      <form className="form" id="form" onSubmit={handleSubmit}>
-        <div className="entries">
-          {" "}
-          <input
-            type="text"
-            id="mail"
-            value={mail}
-            onChange={onChangeMail}
-            placeholder="e-mail"
-          />
-          <div className="password">
+      <h1>Activity Board</h1>
+      <div className="main-home">
+        <HowTo />
+
+        <div className="right">
+          <form className="form" id="form" onSubmit={handleSubmit}>
+            <h2 className="userTitle">User</h2>
+            <div className="entries">
+              {" "}
+              <input
+                type="text"
+                id="mail"
+                value={mail}
+                onChange={onChangeMail}
+                placeholder="e-mail"
+              />
+              <div className="password">
+                <input
+                  type="password"
+                  id="password"
+                  className="passwordInput"
+                  value={password}
+                  onChange={onChangePassword}
+                  placeholder="Password"
+                />
+                <FontAwesomeIcon
+                  onClick={closeOpen}
+                  className="password-icon_open"
+                  icon={faEye}
+                />
+                <FontAwesomeIcon
+                  onClick={closeClosed}
+                  className="password-icon_closed"
+                  icon={faEyeSlash}
+                />
+              </div>
+            </div>
             <input
-              type="password"
-              id="password"
-              className="passwordInput"
-              value={password}
-              onChange={onChangePassword}
-              placeholder="Password"
+              className="submit"
+              id="submit"
+              type="submit"
+              value="Me connecter"
             />
-            <FontAwesomeIcon
-              onClick={closeOpen}
-              className="password-icon_open"
-              icon={faEye}
-            />
-            <FontAwesomeIcon
-              onClick={closeClosed}
-              className="password-icon_closed"
-              icon={faEyeSlash}
-            />
+          </form>
+          <div className="logos">
+            <div className="logo logo1"></div>
+            <div className="logo logo2"></div>
+            <div className="logo logo3"></div>
+            <div className="logo-txt"></div>
+            <div className="logo-txt2"></div>
+            <div className="logo logo4"></div>
+            <div className="logo logo5"></div>
+            <div className="logo logo6"></div>
           </div>
         </div>
-        <input
-          className="submit"
-          id="submit"
-          type="submit"
-          value="Me connecter"
-        />
-      </form>
+      </div>
 
       <div className="link">
         <Link to={"/adminLog"}>Admin</Link>
-        <p className="allert">Log as an admin in order to see every member</p>
+        <p className="alert">Log as an admin in order to see every member</p>
       </div>
     </div>
   );

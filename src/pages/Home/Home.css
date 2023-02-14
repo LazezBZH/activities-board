@@ -1,9 +1,33 @@
 .home {
   width: 100vw;
+  height: 100vh;
 }
-.form {
-  width: 40%;
+.main-home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+.home form {
+  background-color: rgba(255, 255, 255, 0.98);
+  width: 80%;
+  height: 15vh;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.right {
+  width: 50%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.userTitle {
+  color: var(--darkBlue);
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
 }
 .entries {
   width: auto;
@@ -25,6 +49,7 @@
   right: 2%;
   bottom: 0%;
   cursor: pointer;
+  color: var(--darkBlue);
 }
 .password-icon_closed {
   position: absolute;
@@ -32,6 +57,20 @@
   bottom: 0%;
   display: none;
   cursor: pointer;
+  color: var(--darkBlue);
+}
+.submit {
+  margin: 1rem auto;
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.home h1 {
+  text-align: center;
+  font-size: 4rem;
+  opacity: 0.95;
 }
 .link {
   width: 5rem;
@@ -45,14 +84,89 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
 }
-a:hover + .allert {
+a:hover + .alert {
   display: block;
 }
-.allert {
+.alert {
   width: 12rem;
-  color: green;
+  color: white;
   font-size: 0.8rem;
   display: none;
   position: absolute;
   right: 0;
+}
+.logos {
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  position: relative;
+}
+.logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: white;
+  margin: 4rem;
+}
+.logo1 {
+  background-image: url("../../../public/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo2 {
+  background-image: url("../../../public/images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo3 {
+  background-image: url("../../../public/images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo4 {
+  background-image: url("../../../public/images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo5 {
+  background-image: url("../../../public/images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo6 {
+  background-image: url("../../../public/images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo-txt {
+  width: 70%;
+  height: 10rem;
+  margin: -4rem auto;
+  background-image: url("../../../public/images/home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  left: -30%;
+  top: 75%;
+  transform: rotate(-120deg);
+}
+.logo-txt2 {
+  width: 70%;
+  height: 10rem;
+  margin: -4rem auto;
+  background-image: url("../../../public/images/home2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  left: 55%;
+  top: 25%;
+  transform: rotate(70deg);
+}
+.wrap {
+  color: white;
 }

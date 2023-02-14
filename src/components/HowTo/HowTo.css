@@ -1,0 +1,49 @@
+.HowTo {
+  width: 30%;
+  background-color: var(--veryDarkBlue);
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.HowTo h2 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--veryDarkBlue);
+  background-color: white;
+  border-radius: 5px;
+}
+.HowTo p {
+  padding-left: 1rem;
+  text-indent: 1rem;
+}
+table {
+  margin: auto;
+  border-spacing: 25px 10px;
+}
+caption {
+  color: var(--veryDarkBlue);
+  background-color: white;
+}
+
+th {
+  text-align: left;
+  padding-left: 1rem;
+}
+.HowTo h3 {
+  margin: 0;
+}
+.HowTo button {
+  color: white;
+}
+
+table input {
+  cursor: copy;
+  width: 100%;
+  padding: 0 1rem;
+  color: white;
+  background-color: var(--veryDarkBlue);
+  border: none;
+  text-align: left;
+}

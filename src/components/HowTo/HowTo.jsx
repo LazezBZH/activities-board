@@ -107,7 +107,7 @@ export default function HowTo() {
     <div className="HowTo">
       <h2>How to use this App?</h2>
       <p>
-        Loggin is just for my training, no security, if you inspect my code you
+        Login is just for my training, no security, if you inspect my code you
         can easily find how to log.
       </p>
       <p>Easier than inspect, I give you here all necessary to log.</p>

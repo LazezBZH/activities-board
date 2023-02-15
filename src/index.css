@@ -15,10 +15,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,14 +24,16 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  /* display: flex;
+  place-items: center; */
+  width: 100%;
   min-height: 100vh;
   background-image: url("../../../public/images/background.svg");
-  background-size: 115%;
-  background-repeat: no-repeat;
-  background-color: var(--veryDarkBlue);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: var(--darkBlue);
   color: white;
 }
 

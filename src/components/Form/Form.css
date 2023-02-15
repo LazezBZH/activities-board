@@ -1,19 +1,22 @@
-.adminConnected {
-  width: 100vw;
-}
-.adminConnected form {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 30%;
-  height: 10vh;
-  margin: 1rem auto;
+.form {
+  background-color: rgba(255, 255, 255, 0.98);
+  width: 70%;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   border-radius: 5px;
 }
+
+.userTitle {
+  color: var(--darkBlue);
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
 .entries {
   width: auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 1rem;
 }
@@ -22,10 +25,13 @@
 }
 .passwordInput,
 .password,
-#name {
+#mail {
   height: 22px;
+  width: 100%;
 }
-
+#mail {
+  margin-bottom: 0.3rem;
+}
 .password-icon_open {
   position: absolute;
   right: 2%;
@@ -34,6 +40,7 @@
   color: var(--darkBlue);
   z-index: 99;
 }
+
 .password-icon_closed {
   position: absolute;
   right: 2%;
@@ -44,22 +51,9 @@
   z-index: 99;
 }
 .submit {
-  margin: 1rem auto;
   background-color: var(--darkBlue);
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
-}
-.link {
-  width: 5rem;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-a {
-  text-decoration: none;
-  color: red;
-  font-size: 1.5rem;
-  font-weight: bold;
 }

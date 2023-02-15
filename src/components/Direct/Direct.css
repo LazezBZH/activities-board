@@ -1,0 +1,22 @@
+.direct-all {
+  width: 90%;
+  background-color: var(--veryDarkBlue);
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.direct {
+  font-size: 0.8rem;
+}
+.direct-link {
+  display: flex;
+  justify-content: end;
+}
+
+.direct-all img {
+  width: 4.5rem;
+  margin-right: 0.5rem;
+  border: solid 3px wheat;
+}

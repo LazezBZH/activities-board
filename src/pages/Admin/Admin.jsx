@@ -1,4 +1,5 @@
 import { useNavigate, Link } from "react-router-dom";
+import Header from "../../components/Header/Header";
 import "./Admin.css";
 
 export default function Admin() {
@@ -14,11 +15,13 @@ export default function Admin() {
   }
   return (
     <div className="admin">
+      <Header />
       <h2>Witch user do you want to see?</h2>
       <div className="main-admin">
         <select
-          name="selectUser"
-          id="selectUser"
+          name="select-user"
+          id="select-user"
+          className="select-user"
           onChange={(event) => handleChange(event.target.value)}
         >
           <option value="">Choix</option>
@@ -29,11 +32,11 @@ export default function Admin() {
           <option value="Olivia_Carte">Olivia Carte</option>
           <option value="Marie_Doe">Marie Doe</option>
         </select>
-        <button onClick={back}>retour</button>
+        <button onClick={back}>Back</button>
       </div>
-      <Link className="link" to={"/"}>
+      {/* <Link className="link" to={"/"}>
         Home
-      </Link>
+      </Link> */}
     </div>
   );
 }

@@ -1,15 +1,20 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import Header from "../../components/Header/Header";
 import "./AdminLog.css";
 
 export default function AdminConnected() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   let navigate = useNavigate();
-  const eyeOpen = document.getElementsByClassName("password-icon_open")[0];
-  const eyeClosed = document.getElementsByClassName("password-icon_closed")[0];
+  const eyeOpen = document.getElementsByClassName(
+    "admin-password-icon_open"
+  )[0];
+  const eyeClosed = document.getElementsByClassName(
+    "admin-password-icon_closed"
+  )[0];
   const passwordInput = document.getElementsByClassName("passwordInput")[0];
 
   function closeOpen() {
@@ -39,48 +44,49 @@ export default function AdminConnected() {
   }
   return (
     <div className="adminConnected">
-      <form className="form" id="form" onSubmit={handleSubmit}>
-        <div className="entries">
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={onChangeName}
-            placeholder="Name"
-          />
+      <Header />
+      <h2>Log as an admin</h2>
+      <form className="admin-form" id="admin-form" onSubmit={handleSubmit}>
+        <div className="admin-entries">
+          <div className="admin-inputs">
+            <input
+              type="text"
+              id="admin-name"
+              className="admin-name"
+              value={name}
+              onChange={onChangeName}
+              placeholder="Name"
+            />
+          </div>
 
-          <div className="password">
+          <div className="admin-inputs admin-pass">
             <input
               type="password"
-              id="password"
-              className="passwordInput"
+              id="admin-password"
+              className="admin-passwordInput"
               value={password}
               onChange={onChangePassword}
               placeholder="Password"
             />
             <FontAwesomeIcon
               onClick={closeOpen}
-              className="password-icon_open"
+              className="admin-password-icon_open"
               icon={faEye}
             />
             <FontAwesomeIcon
               onClick={closeClosed}
-              className="password-icon_closed"
+              className="admin-password-icon_closed"
               icon={faEyeSlash}
             />
           </div>
         </div>
         <input
-          className="submit"
-          id="submit"
-          type="submit"
-          value="Me connecter en tant qu'admin"
+          className="admin-submit"
+          id="admin-submit"
+          type="admin-submit"
+          value="Connect"
         />
       </form>
-
-      <Link className="link" to={"/"}>
-        Home
-      </Link>
     </div>
   );
 }

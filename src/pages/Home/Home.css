@@ -17,28 +17,23 @@
   justify-content: center;
   align-items: center;
 }
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--veryDarkBlue);
-  padding: 0 0.5rem 0.5rem 0.5rem;
-}
-h1 {
-  text-align: center;
-  font-size: 1.8rem;
-  opacity: 0.95;
-  margin: 0.5rem;
-  flex-grow: 1;
-}
 
+.link-home {
+  display: none;
+}
+.admin-link {
+  position: absolute;
+  right: 5px;
+  padding: 0;
+  z-index: 99;
+}
 a {
   text-decoration: none;
   color: red;
   font-size: 1.5rem;
   font-weight: bold;
 }
-a:hover + .alert {
+.admin-link:hover + .alert {
   display: block;
 }
 .alert {
@@ -48,4 +43,5 @@ a:hover + .alert {
   display: none;
   position: absolute;
   right: 0;
+  top: 2%;
 }

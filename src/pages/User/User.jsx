@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { users } from "../../../data.json";
 import Activity from "../../components/Activity/Activity";
+import Header from "../../components/Header/Header";
 import "./User.css";
 
 export default function User() {
@@ -20,24 +21,73 @@ export default function User() {
   }
 
   return (
-    <div className="container">
+    <div className="user-container">
+      <Header />
       <div className="card">
         <div className="user">
-          <p>Report for</p>
-          <p>{data[0].firstname}</p>
-          <p>{data[0].lastname}</p>
-          <img src={scr} alt="" />
+          <div className="user-img">
+            <img src={scr} alt="" />
+          </div>
+          <div className="user-txt">
+            <p className="report">Report for</p>
+            <div className="user-name">
+              <p>{data[0].firstname}</p>
+              <p>{data[0].lastname}</p>
+            </div>
+          </div>
         </div>
         <div className="choice">
-          <button value="daily" onClick={(e) => setChoice(e.target.value)}>
-            Daily
-          </button>
-          <button value="weekly" onClick={(e) => setChoice(e.target.value)}>
-            Weekly
-          </button>
-          <button value="monthly" onClick={(e) => setChoice(e.target.value)}>
-            Monthly
-          </button>
+          {choice == "daily" ? (
+            <button
+              className="active-btn"
+              value="daily"
+              onClick={(e) => setChoice(e.target.value)}
+            >
+              Daily
+            </button>
+          ) : (
+            <button
+              className="inactive-btn"
+              value="daily"
+              onClick={(e) => setChoice(e.target.value)}
+            >
+              Daily
+            </button>
+          )}
+          {choice == "weekly" ? (
+            <button
+              className="active-btn"
+              value="weekly"
+              onClick={(e) => setChoice(e.target.value)}
+            >
+              Weekly
+            </button>
+          ) : (
+            <button
+              className="inactive-btn"
+              value="weekly"
+              onClick={(e) => setChoice(e.target.value)}
+            >
+              Weekly
+            </button>
+          )}
+          {choice == "monthly" ? (
+            <button
+              className="active-btn"
+              value="monthly"
+              onClick={(e) => setChoice(e.target.value)}
+            >
+              Monthly
+            </button>
+          ) : (
+            <button
+              className="inactive-btn"
+              value="monthly"
+              onClick={(e) => setChoice(e.target.value)}
+            >
+              Monthly
+            </button>
+          )}
         </div>
       </div>
       <div className="activities">
@@ -46,11 +96,7 @@ export default function User() {
         ))}
       </div>
 
-      {/* <Link to={"/"}>Back</Link> */}
       <button onClick={back}>retour</button>
-      <Link className="link" to={"/"}>
-        Home
-      </Link>
     </div>
   );
 }

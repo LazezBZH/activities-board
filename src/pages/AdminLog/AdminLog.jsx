@@ -43,7 +43,7 @@ export default function AdminConnected() {
     }
   }
   return (
-    <div className="adminConnected">
+    <div className="admin-log">
       <Header />
       <h2>Log as an admin</h2>
       <form className="admin-form" id="admin-form" onSubmit={handleSubmit}>

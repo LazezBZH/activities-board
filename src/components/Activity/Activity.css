@@ -1,0 +1,96 @@
+.activity {
+  width: 85%;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+
+#Work {
+  background-color: var(--work);
+  background-image: url(../../../public/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position: 95% -15%;
+  background-size: 5.5rem;
+}
+#Play {
+  background-color: var(--play);
+  background-image: url(../../../public/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position: 95% -10%;
+  background-size: 5.5rem;
+}
+#Study {
+  background-color: var(--study);
+  background-image: url(../../../public/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position: 95% -10%;
+  background-size: 5.5rem;
+}
+#Exercise {
+  background-color: var(--exercise);
+  background-image: url(../../../public/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position: 95% -0%;
+  background-size: 5.5rem;
+}
+#Social {
+  background-color: var(--social);
+  background-image: url(../../../public/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position: 95% -20%;
+  background-size: 5rem;
+}
+#SelfCare {
+  background-color: var(--selfCare);
+  background-image: url(../../../public/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 95% -10%;
+  background-size: 4.5rem;
+}
+.activity-txt {
+  margin-top: 2.8rem;
+  margin-bottom: -0.1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkBlue);
+  border-radius: 15px;
+  box-shadow: 0px -2px 0px var(--darkBlueLow);
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.activity-title {
+  display: flex;
+  align-items: center;
+}
+.activity-title h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+  flex-grow: 1;
+}
+.activity-points button {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 2rem;
+  opacity: 0.7;
+  padding: 0;
+}
+.activity-details {
+  display: flex;
+  align-items: center;
+}
+.activity-details_current {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 0;
+}
+.activity-details_previous {
+  flex-grow: 1;
+  text-align: right;
+  opacity: 0.7;
+  margin: 0;
+}

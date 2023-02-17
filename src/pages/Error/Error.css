@@ -1,0 +1,17 @@
+.error-log {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25%;
+}
+.back-btn {
+  width: 30%;
+  font-size: 1.2rem;
+  background-color: var(--veryDarkBlue);
+  color: white;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+}

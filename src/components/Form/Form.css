@@ -6,6 +6,7 @@
   flex-direction: column;
   padding: 1rem;
   border-radius: 5px;
+  z-index: 99;
 }
 
 .userTitle {

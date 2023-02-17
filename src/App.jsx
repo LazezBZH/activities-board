@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
+import Header from "./components/Header/Header";
 
 import "./App.css";
 
@@ -12,6 +13,7 @@ const Error = lazy(() => import("./pages/Error/Error"));
 function App() {
   return (
     <>
+      <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route index element={<Home />} />

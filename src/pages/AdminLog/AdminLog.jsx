@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import Header from "../../components/Header/Header";
+
 import "./AdminLog.css";
 
 export default function AdminConnected() {
@@ -15,7 +15,9 @@ export default function AdminConnected() {
   const eyeClosed = document.getElementsByClassName(
     "admin-password-icon_closed"
   )[0];
-  const passwordInput = document.getElementsByClassName("passwordInput")[0];
+  const passwordInput = document.getElementsByClassName(
+    "admin-passwordInput"
+  )[0];
 
   function closeOpen() {
     eyeOpen.style.display = "none";
@@ -44,7 +46,6 @@ export default function AdminConnected() {
   }
   return (
     <div className="admin-log">
-      <Header />
       <h2>Log as an admin</h2>
       <form className="admin-form" id="admin-form" onSubmit={handleSubmit}>
         <div className="admin-entries">
@@ -83,7 +84,7 @@ export default function AdminConnected() {
         <input
           className="admin-submit"
           id="admin-submit"
-          type="admin-submit"
+          type="submit"
           value="Connect"
         />
       </form>

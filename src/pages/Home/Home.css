@@ -18,14 +18,13 @@
   align-items: center;
 }
 
-.link-home {
-  display: none;
-}
 .admin-link {
   position: absolute;
   right: 5px;
-  padding: 0;
+  top: 2%;
+  padding: 0 0.5rem 1rem 0.5rem;
   z-index: 99;
+  background-color: var(--veryDarkBlue);
 }
 a {
   text-decoration: none;

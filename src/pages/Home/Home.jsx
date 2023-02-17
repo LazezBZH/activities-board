@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
-import Header from "../../components/Header/Header";
 import HowTo from "../../components/HowTo/HowTo";
 import Form from "../../components/Form/Form";
 import Logos from "../../components/Logos/Logos";
@@ -15,7 +14,6 @@ export default function Home() {
         </div>
         <p className="alert">Log as an admin in order to see every member</p>
       </div>
-      <Header />
       <div className="main-home">
         <HowTo />
         <div className="aside-right">

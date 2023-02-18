@@ -1,5 +1,6 @@
 .HowTo {
   width: 90%;
+  height: 100%;
   background-color: var(--veryDarkBlue);
   padding: 1rem;
   margin: 0 auto;
@@ -24,7 +25,7 @@
 }
 table {
   margin: auto;
-  border-spacing: 25px 10px;
+  border-spacing: 10px 10px;
 }
 caption {
   color: var(--veryDarkBlue);
@@ -39,13 +40,49 @@ th {
 table input {
   cursor: copy;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0;
   color: white;
   background-color: var(--veryDarkBlue);
   border: none;
   text-align: left;
 }
+
+.td-large {
+  width: 100%;
+}
+
 .advert-copy {
   font-size: 0.7rem;
   text-align: right;
+}
+
+@media screen and (min-width: 400px) {
+  table {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 550px) {
+  .HowTo {
+    max-width: 495px;
+  }
+  table {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .HowTo {
+    width: 50%;
+  }
+  table {
+    width: auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HowTo {
+    max-width: 500px;
+    width: 100%;
+  }
+  table {
+    max-width: 350px;
+  }
 }

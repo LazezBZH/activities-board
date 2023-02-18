@@ -147,7 +147,7 @@ export default function HowTo() {
         </tbody>
       </table>
       <p>You can also see only one user's profile, here are the keys:</p>
-      <table>
+      <table className="table-nonegal">
         <caption>
           <h3>To log as one user</h3>
         </caption>

@@ -70,3 +70,143 @@
   top: 15%;
   transform: rotate(70deg);
 }
+
+@media screen and (min-width: 384px) {
+  .logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    width: 7rem;
+    height: 7rem;
+    margin: 1.2rem;
+  }
+  .logos {
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    width: 7rem;
+    height: 7rem;
+    margin: 1.6rem;
+  }
+  .logos {
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 653px) {
+  .logo {
+    width: 8rem;
+    height: 8rem;
+    margin: 1.6rem;
+  }
+  .logos {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 717px) {
+  .logo {
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem;
+  }
+  .logos {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logos {
+    max-width: 768px;
+  }
+  .logo {
+    width: 11rem;
+    height: 11rem;
+    margin: 1.4rem;
+  }
+  .logos {
+    margin-top: 2.5rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .logo {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+  }
+  .logos {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 928px) {
+  .logo {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+  }
+  .logos {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1044px) {
+  .logo {
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+  }
+  .logos {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 1172px) {
+  .logo {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+  }
+  .logos {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 1172px) {
+  .logo {
+    width: 11rem;
+    height: 11rem;
+    margin: 1rem;
+  }
+  .logos {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .logo {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+  }
+  .logos {
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .logo {
+    width: 14rem;
+    height: 14rem;
+    margin: 2.5rem 3rem;
+  }
+  .logos {
+    max-width: 1000px;
+  }
+}

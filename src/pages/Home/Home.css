@@ -1,5 +1,7 @@
 .home {
-  width: 100vw;
+  max-width: 1600px;
+  margin: auto;
+  padding-top: 2rem;
 }
 .main-home {
   width: 100%;
@@ -37,13 +39,15 @@ a {
   display: block;
 }
 .alert {
-  width: 12rem;
+  width: auto;
   color: white;
   font-size: 0.8rem;
   display: none;
   position: absolute;
-  right: 0;
-  top: 2%;
+  right: 1%;
+  top: 5%;
+  background-color: var(--veryDarkBlue);
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 900px) {

@@ -20,6 +20,7 @@
 }
 .alert-error button {
   width: 30%;
+  max-width: 125px;
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   padding: 1rem;
@@ -27,10 +28,21 @@
 }
 .back-btn {
   width: 30%;
+  max-width: 95px;
   font-size: 1.2rem;
   background-color: var(--blue);
   color: white;
   padding: 1rem;
   margin: auto;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .user-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 5rem;
+  }
 }

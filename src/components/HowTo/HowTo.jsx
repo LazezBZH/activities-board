@@ -281,8 +281,9 @@ export default function HowTo() {
         </tbody>
       </table>
       <div className="advert-copy">
-        * just clic on an identifiant or password to copy in clipboard
+        * just click on an identifiant or password to copy in clipboard
       </div>
+      <div className="advert-copy">* then click on an input to paste</div>
     </div>
   );
 }

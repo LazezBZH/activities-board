@@ -41,7 +41,7 @@ export default function AdminConnected() {
     if (name == "admin" && password == "Admin@123") {
       navigate(`/admin`);
     } else {
-      alert("name or password are false");
+      alert("name or password invalid ");
     }
   }
   return (
@@ -87,6 +87,7 @@ export default function AdminConnected() {
           type="submit"
           value="Connect"
         />
+        <p>(id= admin pass= Admin@123)</p>
       </form>
     </div>
   );

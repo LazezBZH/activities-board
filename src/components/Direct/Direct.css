@@ -1,5 +1,6 @@
 .direct-all {
   width: 90%;
+  max-width: 610px;
   background-color: var(--veryDarkBlue);
   display: flex;
   padding: 0.5rem;
@@ -13,6 +14,7 @@
 .direct-link {
   display: flex;
   justify-content: end;
+  z-index: 99;
 }
 
 .direct-all img {

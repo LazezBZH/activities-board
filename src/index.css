@@ -2,6 +2,7 @@
   --blue: hsl(246, 80%, 60%);
   --veryDarkBlue: hsl(226, 43%, 10%);
   --darkBlue: hsl(235, 46%, 20%);
+  --midBlue: hsl(236, 44%, 35%);
   --darkBlueLow: rgba(28, 31, 74, 0.9);
   --desaturatedBlue: hsl(235, 45%, 61%);
   --paleBlue: hsl(236, 100%, 87%);
@@ -25,8 +26,6 @@
 
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center; */
   width: 100%;
   min-height: 100vh;
   background-image: url("../../../public/images/background.svg");
@@ -34,7 +33,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: var(--darkBlue);
+  background-color: var(--paleBlue);
   color: white;
 }
 
@@ -49,16 +48,3 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

@@ -1,3 +1,7 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+}
 .card {
   width: 85%;
   margin: auto;
@@ -51,6 +55,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .choice button {
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -68,4 +73,52 @@
 .activities {
   display: flex;
   flex-direction: column;
+}
+.card {
+  max-width: 360px;
+}
+
+@media screen and (min-width: 1000px) {
+  .user-card {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+  }
+  .card {
+    width: 22%;
+    max-width: 200px;
+    margin: 0 0 0 1rem;
+  }
+  .activities {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .user {
+    flex-direction: column;
+  }
+  .user-img {
+    padding-left: 0.5rem;
+    justify-content: left;
+  }
+  .user-txt {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .report {
+    font-size: 0.8rem;
+  }
+  .user-name {
+    flex-direction: column;
+    font-size: 2.2rem;
+  }
+  .choice {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .choice button {
+    text-align: left;
+    text-indent: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
 }

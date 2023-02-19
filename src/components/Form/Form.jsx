@@ -33,7 +33,7 @@ export default function Home() {
     e.preventDefault();
     console.log(mail, password);
     if (mail == "jeremy.robson@monmail.com" && password == "Robson@123") {
-      navigate(`../Jérémy_Robson`);
+      navigate(`../Jeremy_Robson`);
     } else if (
       mail == "caroline.buipe@monmail.com" &&
       password == "Buipe@123"
@@ -52,6 +52,11 @@ export default function Home() {
       navigate(`../Marie_Doe`);
     } else navigate(`/error`);
   }
+
+  async function paste(e) {
+    const text = await navigator.clipboard.readText();
+    e.target.value = text;
+  }
   return (
     <form className="form" id="form" onSubmit={handleSubmit}>
       <h2 className="userTitle">User</h2>
@@ -63,6 +68,7 @@ export default function Home() {
           value={mail}
           onChange={onChangeMail}
           placeholder="e-mail"
+          onClick={paste}
         />
         <div className="password">
           <input
@@ -72,6 +78,7 @@ export default function Home() {
             value={password}
             onChange={onChangePassword}
             placeholder="Password"
+            onClick={paste}
           />
           <FontAwesomeIcon
             onClick={closeOpen}

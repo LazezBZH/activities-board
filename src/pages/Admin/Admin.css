@@ -4,9 +4,11 @@
 .admin h2 {
   margin-top: 2rem;
   text-align: center;
+  color: var(--darkBlue);
 }
 .main-admin {
   width: 40%;
+  max-width: 280px;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;

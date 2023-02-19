@@ -9,7 +9,9 @@
   border-radius: 5px;
   z-index: 99;
 }
-
+.form input {
+  cursor: copy;
+}
 .userTitle {
   color: var(--darkBlue);
   margin: 0 auto;

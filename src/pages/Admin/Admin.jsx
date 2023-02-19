@@ -24,7 +24,7 @@ export default function Admin() {
         >
           <option value="">Choix</option>
           <option value="Bob_l'éponge">Bob l'Éponge</option>
-          <option value="Jérémy_Robson">Jérémy Robson</option>
+          <option value="Jeremy_Robson">Jeremy Robson</option>
           <option value="Caroline_Buipe">Caroline Buipe</option>
           <option value="Jean_Bon">Jean Bon</option>
           <option value="Arthur_Dannes">Arthur Dannes</option>

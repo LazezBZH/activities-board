@@ -72,6 +72,7 @@ table input {
 @media screen and (min-width: 800px) {
   .HowTo {
     width: 50%;
+    margin-left: 1rem;
   }
   table {
     width: auto;

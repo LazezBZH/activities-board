@@ -7,10 +7,7 @@ export default function Error() {
   }
   return (
     <div className="error-log">
-      <p>
-        Cet utilisateur n'existe pas, veuillez vérifier votre mail de connexion
-        et votre mot de passe
-      </p>
+      <p>This user doesn't exist, please check e-mail and password</p>
       <button className="back-btn" onClick={back}>
         Back
       </button>

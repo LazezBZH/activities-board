@@ -4,15 +4,17 @@
 .admin-log h2 {
   margin-top: 2rem;
   text-align: center;
+  color: var(--darkBlue);
 }
 .admin-form {
   background-color: rgba(255, 255, 255, 0.85);
   width: 60%;
+  max-width: 280px;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   border-radius: 5px;
 }
 .admin-entries {
@@ -71,4 +73,8 @@
 }
 .admin-log .link-home {
   display: block;
+}
+.admin-log p {
+  color: var(--veryDarkBlue);
+  margin-bottom: 0;
 }

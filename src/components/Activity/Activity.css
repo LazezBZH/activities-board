@@ -8,7 +8,7 @@
 
 #Work {
   background-color: var(--work);
-  background-image: url(../../../public/images/icon-work.svg);
+  background-image: url(/images/icon-work.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-position: 95% -15%;
@@ -16,7 +16,7 @@
 }
 #Play {
   background-color: var(--play);
-  background-image: url(../../../public/images/icon-play.svg);
+  background-image: url(/images/icon-play.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-position: 95% -10%;
@@ -24,7 +24,7 @@
 }
 #Study {
   background-color: var(--study);
-  background-image: url(../../../public/images/icon-study.svg);
+  background-image: url(/images/icon-study.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-position: 95% -10%;
@@ -32,7 +32,7 @@
 }
 #Exercise {
   background-color: var(--exercise);
-  background-image: url(../../../public/images/icon-exercise.svg);
+  background-image: url(/images/icon-exercise.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-position: 95% -0%;
@@ -40,7 +40,7 @@
 }
 #Social {
   background-color: var(--social);
-  background-image: url(../../../public/images/icon-social.svg);
+  background-image: url(/images/icon-social.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-position: 95% -20%;
@@ -48,7 +48,7 @@
 }
 #SelfCare {
   background-color: var(--selfCare);
-  background-image: url(../../../public/images/icon-self-care.svg);
+  background-image: url(/images/icon-self-care.svg);
   background-repeat: no-repeat;
   background-position: 95% -10%;
   background-size: 4.5rem;

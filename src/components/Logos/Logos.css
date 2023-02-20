@@ -15,32 +15,32 @@
   background-color: white;
 }
 .logo1 {
-  background-image: url("../../../public/images/icon-work.svg");
+  background-image: url("/images/icon-work.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .logo2 {
-  background-image: url("../../../public/images/icon-play.svg");
+  background-image: url("/images/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .logo3 {
-  background-image: url("../../../public/images/icon-study.svg");
+  background-image: url("/images/icon-study.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .logo4 {
-  background-image: url("../../../public/images/icon-exercise.svg");
+  background-image: url("/images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .logo5 {
-  background-image: url("../../../public/images/icon-social.svg");
+  background-image: url("/images/icon-social.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .logo6 {
-  background-image: url("../../../public/images/icon-self-care.svg");
+  background-image: url("/images/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -48,7 +48,7 @@
   width: 70%;
   height: 10rem;
   margin: -4rem auto;
-  background-image: url("../../../public/images/home.png");
+  background-image: url("/images/home.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -61,7 +61,7 @@
   width: 70%;
   height: 10rem;
   margin: -4rem auto;
-  background-image: url("../../../public/images/home2.png");
+  background-image: url("/images/home2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;

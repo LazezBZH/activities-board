@@ -13,7 +13,7 @@ export default function UserCardToDisplay() {
   const [choice, setChoice] = useState("daily");
   console.log(choice);
 
-  let src = "../../../public/images/" + data[0].fullname + ".jpg";
+  let src = "/images/" + data[0].fullname + ".jpg";
 
   console.log(choice);
   let activities = [...data[0].activities];

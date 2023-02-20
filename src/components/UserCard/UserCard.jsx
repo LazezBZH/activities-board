@@ -23,13 +23,13 @@ export default function UserCardToDisplay() {
       <div className="card">
         <div className="user">
           <div className="user-img">
-            <img src={src} alt="" />
+            <img src={src} alt={data[0].fullname} />
           </div>
           <div className="user-txt">
             <p className="report">Report for</p>
             <div className="user-name">
-              <p>{data[0].firstname}</p>
-              <p>{data[0].lastname}</p>
+              <h2>{data[0].firstname}</h2>
+              <h2>{data[0].lastname}</h2>
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@ export default function Home() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(mail, password);
-    if (mail == "jeremy.robson@monmail.com" && password == "Robson@123") {
+    if (mail === "jeremy.robson@monmail.com" && password === "Robson@123") {
       navigate(`../Jeremy_Robson`);
     } else if (
       mail == "caroline.buipe@monmail.com" &&
@@ -53,9 +53,15 @@ export default function Home() {
     } else navigate(`/error`);
   }
 
-  async function paste(e) {
+  async function paste1(e) {
     const text = await navigator.clipboard.readText();
     e.target.value = text;
+    setMail(text);
+  }
+  async function paste2(e) {
+    const text = await navigator.clipboard.readText();
+    e.target.value = text;
+    setPassword(text);
   }
   return (
     <form className="form" id="form" onSubmit={handleSubmit}>
@@ -68,7 +74,8 @@ export default function Home() {
           value={mail}
           onChange={onChangeMail}
           placeholder="e-mail"
-          onClick={paste}
+          onClick={paste1}
+          title="enter user's e-mail here"
         />
         <div className="password">
           <input
@@ -78,7 +85,8 @@ export default function Home() {
             value={password}
             onChange={onChangePassword}
             placeholder="Password"
-            onClick={paste}
+            onClick={paste2}
+            title="enter user's password here"
           />
           <FontAwesomeIcon
             onClick={closeOpen}

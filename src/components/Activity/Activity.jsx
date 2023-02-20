@@ -6,9 +6,8 @@ export default function Activity(activity) {
   return (
     <div className="activity" id={id}>
       <div className="activity-txt">
-        {/* <div className="activity-header"></div> */}
         <div className="activity-title">
-          <h6>{activity.activity.title}</h6>{" "}
+          <h3>{activity.activity.title}</h3>{" "}
           <div className="activity-points">
             <button>.</button>
             <button>.</button>
@@ -20,9 +19,9 @@ export default function Activity(activity) {
             case "weekly":
               return (
                 <div className="activity-details">
-                  <p className="activity-details_current">
+                  <h4 className="activity-details_current">
                     {activity.activity.timeframes[0].weekly[0].current}hrs
-                  </p>
+                  </h4>
                   <p className="activity-details_previous">
                     Last Week -{" "}
                     {activity.activity.timeframes[0].weekly[0].previous}hrs
@@ -32,9 +31,9 @@ export default function Activity(activity) {
             case "monthly":
               return (
                 <div className="activity-details">
-                  <p className="activity-details_current">
+                  <h4 className="activity-details_current">
                     {activity.activity.timeframes[0].monthly[0].current}hrs
-                  </p>
+                  </h4>
                   <p className="activity-details_previous">
                     Last Month -{" "}
                     {activity.activity.timeframes[0].monthly[0].previous}hrs
@@ -44,9 +43,9 @@ export default function Activity(activity) {
             default:
               return (
                 <div className="activity-details">
-                  <p className="activity-details_current">
+                  <h4 className="activity-details_current">
                     {activity.activity.timeframes[0].daily[0].current}hrs
-                  </p>
+                  </h4>
                   <p className="activity-details_previous">
                     Yesterday -{" "}
                     {activity.activity.timeframes[0].daily[0].previous}hrs

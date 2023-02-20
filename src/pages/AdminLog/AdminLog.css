@@ -78,3 +78,15 @@
   color: var(--veryDarkBlue);
   margin-bottom: 0;
 }
+.help input:first-child {
+  cursor: copy;
+  width: 2.5rem;
+  padding: 0;
+  text-align: center;
+}
+.help input:last-child {
+  cursor: copy;
+  width: 5rem;
+  padding: 0;
+  text-align: center;
+}

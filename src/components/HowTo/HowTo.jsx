@@ -131,6 +131,7 @@ export default function HowTo() {
                 onClick={copy13}
                 value="admin"
                 readOnly
+                title="click here to copy admin's identifiant"
               />
             </td>
             <td>
@@ -141,6 +142,7 @@ export default function HowTo() {
                 onClick={copy14}
                 value="Admin@123"
                 readOnly
+                title="click here to copy admin's password"
               />
             </td>
           </tr>
@@ -166,6 +168,7 @@ export default function HowTo() {
                 onClick={copy1}
                 value="jeremy.robson@monmail.com"
                 readOnly
+                title="click here to copy jeremy robson's e-mail"
               />
             </td>
             <td className="td-small">
@@ -175,6 +178,7 @@ export default function HowTo() {
                 onClick={copy2}
                 value="Robson@123"
                 readOnly
+                title="click here to copy jeremy robson's password"
               />
             </td>
           </tr>
@@ -186,6 +190,7 @@ export default function HowTo() {
                 onClick={copy3}
                 value="caroline.buipe@monmail.com"
                 readOnly
+                title="click here to copy caroline buipe's e-mail"
               />
             </td>
             <td>
@@ -195,6 +200,7 @@ export default function HowTo() {
                 onClick={copy4}
                 value="Buipe@123"
                 readOnly
+                title="click here to copy caroline buipe's password"
               />
             </td>
           </tr>
@@ -206,6 +212,7 @@ export default function HowTo() {
                 onClick={copy5}
                 value="jean.bon@monmail.com"
                 readOnly
+                title="click here to copy jean bon's e-mail"
               />
             </td>
             <td>
@@ -215,6 +222,7 @@ export default function HowTo() {
                 onClick={copy6}
                 value="Bon@123"
                 readOnly
+                title="click here to copy jean bon's password"
               />
             </td>
           </tr>
@@ -226,6 +234,7 @@ export default function HowTo() {
                 onClick={copy7}
                 value="arthur.dannes@monmail.com"
                 readOnly
+                title="click here to copy arthur dannes' e-mail"
               />
             </td>
             <td>
@@ -235,6 +244,7 @@ export default function HowTo() {
                 onClick={copy8}
                 value="Dannes@123"
                 readOnly
+                title="click here to copy arthur dannes' password"
               />
             </td>
           </tr>
@@ -246,6 +256,7 @@ export default function HowTo() {
                 onClick={copy9}
                 value="olivia.carte@monmail.com"
                 readOnly
+                title="click here to copy olivia carte's e-mail"
               />
             </td>
             <td>
@@ -255,6 +266,7 @@ export default function HowTo() {
                 onClick={copy10}
                 value="Carte@123"
                 readOnly
+                title="click here to copy olivia carte's password"
               />
             </td>
           </tr>
@@ -266,6 +278,7 @@ export default function HowTo() {
                 onClick={copy11}
                 value="marie.doe@monmail.com"
                 readOnly
+                title="click here to copy marie doe's e-mail"
               />
             </td>
             <td>
@@ -275,6 +288,7 @@ export default function HowTo() {
                 onClick={copy12}
                 value="Doe@123"
                 readOnly
+                title="click here to copy marie doe's identifiant"
               />
             </td>
           </tr>

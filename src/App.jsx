@@ -9,6 +9,7 @@ const User = lazy(() => import("./pages/User/User"));
 const AdminLog = lazy(() => import("./pages/AdminLog/AdminLog"));
 const Admin = lazy(() => import("./pages/Admin/Admin"));
 const Error = lazy(() => import("./pages/Error/Error"));
+const About = lazy(() => import("./pages/About/About"));
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/:id" element={<User />} />
           <Route path="*" element={<Error />} />
           <Route path="/error" element={<Error />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Suspense>
     </>

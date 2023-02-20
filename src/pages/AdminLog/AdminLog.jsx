@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,32 @@ import "./AdminLog.css";
 export default function AdminConnected() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const inputRef1 = useRef(null);
+  const inputRef2 = useRef(null);
+  function copy1(e) {
+    inputRef1.current.select();
+    console.log(indexedDB);
+    document.execCommand("copy");
+    e.target.focus();
+  }
+  function copy2(e) {
+    inputRef2.current.select();
+    console.log(indexedDB);
+    document.execCommand("copy");
+    e.target.focus();
+  }
+
+  async function paste1(e) {
+    const text = await navigator.clipboard.readText();
+    e.target.value = text;
+    setName(text);
+  }
+  async function paste2(e) {
+    const text = await navigator.clipboard.readText();
+    e.target.value = text;
+    setPassword(text);
+  }
+
   let navigate = useNavigate();
   const eyeOpen = document.getElementsByClassName(
     "admin-password-icon_open"
@@ -57,6 +83,8 @@ export default function AdminConnected() {
               value={name}
               onChange={onChangeName}
               placeholder="Name"
+              title="click here to copy admin's identifiant"
+              onClick={paste1}
             />
           </div>
 
@@ -68,6 +96,8 @@ export default function AdminConnected() {
               value={password}
               onChange={onChangePassword}
               placeholder="Password"
+              title="click here to copy admin's password"
+              onClick={paste2}
             />
             <FontAwesomeIcon
               onClick={closeOpen}
@@ -87,7 +117,27 @@ export default function AdminConnected() {
           type="submit"
           value="Connect"
         />
-        <p>(id= admin pass= Admin@123)</p>
+        <p className="help">
+          (id={" "}
+          <input
+            ref={inputRef1}
+            className="toCopy"
+            onClick={copy1}
+            value="admin"
+            readOnly
+            title="click here to copy admin's identifiant"
+          />{" "}
+          pass={" "}
+          <input
+            ref={inputRef2}
+            className="toCopy"
+            onClick={copy2}
+            value="Admin@123"
+            readOnly
+            title="click here to copy admin's password"
+          />
+          )
+        </p>
       </form>
     </div>
   );

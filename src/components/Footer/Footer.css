@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  /* max-width: 610px; */
+  background-color: var(--veryDarkBlue);
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.footer-txt {
+  display: flex;
+  justify-content: right;
+  font-size: 0.8rem;
+  flex-grow: 1;
+  /* gap: 150px; */
+  align-items: center;
+}
+.footer-link {
+  display: flex;
+  justify-content: end;
+  z-index: 99;
+  margin-right: 1rem;
+}
+
+.footer img {
+  width: 4.5rem;
+  margin-right: 0.5rem;
+  border: solid 3px wheat;
+}
+
+.footer-txt p {
+  text-align: left;
+  font-size: 1rem;
+  flex-grow: 0.5;
+}
